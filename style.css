@@ -14,9 +14,9 @@ body{
   font-family: "Epilogue", serif;
 }
 
-nav{
+.nav-div-1{
   display: flex;
-  justify-content: space-between;
+justify-content: space-between;
   padding: 2rem 1rem;
 }
 
@@ -42,10 +42,14 @@ padding-top: 1rem;
 
 .section-1 p{
   font-size: 18px;
-width: 80%;
+width: 90%;
 margin: 0 auto;
+line-height: 1.5rem;
 text-align: center;
 padding: 1rem 0;
+}
+.section-1-img-2{
+  display: none;
 }
 
 button{
@@ -63,4 +67,60 @@ margin-left: 6rem;
 display: flex;
 padding-top: 2rem;
 gap: 1rem;
+}
+
+@media(min-width:765px){
+  nav{
+    display: flex;
+    gap: 6rem;
+  }
+  .nav-div-2{
+    display: block;
+    display: flex;
+padding-top: 2rem;
+gap: 6rem;
+  }
+  .nav-div-3{
+    display: none;
+  }
+
+  .nav-div-2-1{
+    display: flex;
+    gap: 1rem;
+  }
+
+  .section-1{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 1rem;
+    max-width: 100%;
+  }
+  .section-1-img-2{
+    display: block;
+    max-width: 50%;
+    padding-left: 1rem;
+  }
+  .section-1-img-1{
+    display: none;
+  }
+
+  .section-1 h1{
+    font-size: 5rem;
+    text-align: initial;
+    width: 80%;
+    margin-left: 6.5rem;
+  }
+
+  .section-1 p{
+    display: flex;
+    text-align: initial;
+    width: 70%;
+  }
+
+  
+
+  button{
+width: 20%;
+  
+  }
 }
